@@ -1,5 +1,7 @@
 # How to host a Ghost Blog v1.x for Free on Github Pages
 
+![ghost-blog](/images/ghost-blog.png)
+
 [Ghost](https://ghost.org/) is a free, open-source blogging platform known for its simplicity, letting you focus on writing.
 
 There is a small hiccup though. If you want to use Ghost Pro(which is similar to Wordpress.com) for hosting your blog, the basic plan starts at around $20 per month.
@@ -17,7 +19,7 @@ Github Pages is a free static site hosting service that allows you to your perso
 We will also be using a modified working version of a tool called Buster to generate static pages from our Ghost blog since the author of the original tool doesn't support it any more and it's Github repository is filled with issues.
 
 
-So here is my guide on how to setup a Ghost blog, host it on Github Pages with a custom domain and a free CDN and SSL from Cloudflare.
+So here is my guide on how to setup a Ghost blog, host it on Github Pages with a custom domain. [Click Here to Checkout my blog using this setup.]()
 
 
 So, let's get started...
