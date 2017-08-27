@@ -20,6 +20,7 @@ We will also be using a modified working version of a tool called Buster to gene
 
 
 So here is my guide on how to setup a Ghost blog, host it on Github Pages with a custom domain. 
+
 [Click Here to Checkout my blog which is built using this setup.](https://merutan.com/how-to-host-a-ghost-blog-for-free-on-github-pages/)
 
 
