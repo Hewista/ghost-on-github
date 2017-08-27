@@ -55,6 +55,7 @@ knex-migrator reset && knex-migrator init
 1. Now you have ghost successfully set up. Let's start it on the localhost by running `npm start`.
 ![start_ghost](/content/images/2017/08/start_ghost.png)
 2. Ghost will now be live at [http://localhost:2368/](http://localhost:2368/).
+
 ![ghost](/images/ghost.png)
 
 
@@ -86,6 +87,7 @@ Note - If you are on a mac, you first need to install wget using `brew install w
 
 Clone your Github Pages repository inside a sub-folder called static. All your static files will be stored here.
 `git clone git@github.com:username/username.github.io.git static`
+
 ![ghost_folder](/images/ghost_folder.png)
 
 
