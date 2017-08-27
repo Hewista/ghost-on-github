@@ -19,7 +19,8 @@ Github Pages is a free static site hosting service that allows you to your perso
 We will also be using a modified working version of a tool called Buster to generate static pages from our Ghost blog since the author of the original tool doesn't support it any more and it's Github repository is filled with issues.
 
 
-So here is my guide on how to setup a Ghost blog, host it on Github Pages with a custom domain. [Click Here to Checkout my blog using this setup.]()
+So here is my guide on how to setup a Ghost blog, host it on Github Pages with a custom domain. 
+[Click Here to Checkout my blog which is built using this setup.](https://merutan.com/how-to-host-a-ghost-blog-for-free-on-github-pages/)
 
 
 So, let's get started...
@@ -139,8 +140,9 @@ Now go to your Github Pages repository -> Settings -> Github Pages -> Custom Dom
 Your blog will be live at your custom domain in a few minutes.
 
 And that's it. Hope this tutorial helped you.
-Don't forget to star and fork my repository and visit my blog to read interesting articles like this one.
+Don't forget to star and fork my repository and [visit my blog](https://merutan.com/how-to-host-a-ghost-blog-for-free-on-github-pages/) to read interesting articles like this one.
 
+Feel free to create issues and submit pull requests if you find any errors.
 
 **References**
 
