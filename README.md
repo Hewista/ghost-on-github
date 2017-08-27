@@ -23,7 +23,7 @@ So here is my guide on how to setup a Ghost blog, host it on Github Pages with a
 So, let's get started...
 
 
-**1. Install Node.js**
+### 1. Install Node.js
 
 Node.js is the platform which powers Ghost.
 Download and install the latest LTS version for your OS.
@@ -32,14 +32,14 @@ https://nodejs.org/en/download/
 ![nodejs](/images/nodejs.png)
 
 
-**2. Download Ghost**
+### 2. Download Ghost
 
 1. Download the latest version of Ghost from [Ghost Developers](https://ghost.org/developers/).
 2. Extract it somewhere you will remember.
    (I have extracted it to my Desktop)
    
    
-**3. Setup Ghost Environment**
+### 3. Setup Ghost Environment
 
 Open your terminal and navigate to the extracted folder.
 ```
@@ -50,7 +50,7 @@ knex-migrator reset && knex-migrator init
 ![ghost_environment](/images/ghost_environment.png)
 
 
-**4. Start Ghost on localhost**
+### 4. Start Ghost on localhost
 
 1. Now you have ghost successfully set up. Let's start it on the localhost by running `npm start`.
 ![start_ghost](/content/images/2017/08/start_ghost.png)
@@ -59,7 +59,7 @@ knex-migrator reset && knex-migrator init
 ![ghost](/images/ghost.png)
 
 
-**5. Configure Ghost**
+### 5. Configure Ghost
 
 1. Go to [http://localhost:2368/ghost](http://localhost:2368/ghost) and follow the instructions to set up your blog.
 ![ghost_setup-1](/content/images/2017/08/ghost_setup-1.png)
@@ -68,14 +68,14 @@ knex-migrator reset && knex-migrator init
 ![ghost_admin](/images/ghost_admin.png)
 
 
-**6. Create a Github Pages Repository**
+### 6. Create a Github Pages Repository
 
 Head over to Github and create a repository called `username.github.io`. (In my case, [samanyougarg.github.io](https://samanyougarg.github.io))
 
 ![github_pages](/images/github_pages.png)
 
 
-**7. Install Buster**
+### 7. Install Buster
 
 Buster is a python package to generate static pages from Ghost blogs. 
 Note - If you are on a mac, you first need to install wget using `brew install wget`.
@@ -83,7 +83,7 @@ Note - If you are on a mac, you first need to install wget using `brew install w
 `pip install buster`
 
 
-**8. Clone Github Repository**
+### 8. Clone Github Repository
 
 Clone your Github Pages repository inside a sub-folder called static. All your static files will be stored here.
 `git clone git@github.com:username/username.github.io.git static`
@@ -91,21 +91,21 @@ Clone your Github Pages repository inside a sub-folder called static. All your s
 ![ghost_folder](/images/ghost_folder.png)
 
 
-**9. Download fixed buster and update script**
+### 9. Download fixed buster and update script
 
 Download this hacked [buster.py](https://github.com/samanyougarg/ghost-on-github/blob/master/buster.py) and [this script](https://github.com/samanyougarg/ghost-on-github/blob/master/update.sh) and put these inside your ghost folder. Open buster.py using a text editor/code editor and change yourdomain.com (at lines 136-137) to your github subdomain yourusername.github.io or example.tld if you are using a custom domain (In my case merutan.com). Also, open update script in a text/code editor and change your domain on line 4. Run `chmod u+x update.sh` to give required permissions to your script.
 
 ![copy_script_buster](/images/copy_script_buster.png)
 
 
-**10. Generate Static Pages from your Ghost blog**
+### 10. Generate Static Pages from your Ghost blog
 
 Making sure Ghost is running on a terminal window, open another terminal window, navigate to your ghost folder and run `./update.sh` to generate static files in the static sub-folder, automatically change your urls in all files and commit and push to your Github repository.
 
 ![run_script](/images/run_script.png)
 
 
-**11. What does the update script do?**
+### 11. What does the update script do?
 
 1. It generates static pages into your static folder from your blog using modeified buster program.
 2. Replaces all localhost urls inside static folder with your urls.
@@ -118,14 +118,14 @@ Your blog will now be published at yourusername.github.io.
 > Note - It may take upto 10 minutes for your blog to be published at your github pages url.
 
 
-**12. Updating your blog**
+### 12. Updating your blog
 
 Whenever you want to modify your blog, change the theme or write a new post, you need to run `npm start` in a terminal window inside the Ghost folder to start the server. Then you can go to http://localhost:2368/ghost/ and do whatever you want to.
 
 Next open a new terminal window and run `./update.sh` to generate new static files and push the changes to your repository. It may take upto 10 minutes to update the website.
 
 
-**How to set up a custom domain with Github Pages**
+### How to set up a custom domain with Github Pages
 
 Go to the DNS Management Page of your Domain Provider and follow these steps -
 1. Add an 'A' record with Name as '@' and IP address as '192.30.252.153'.
