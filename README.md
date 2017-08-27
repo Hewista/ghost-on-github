@@ -57,7 +57,9 @@ knex-migrator reset && knex-migrator init
 ### 4. Start Ghost on localhost
 
 1. Now you have ghost successfully set up. Let's start it on the localhost by running `npm start`.
-![start_ghost](/content/images/2017/08/start_ghost.png)
+
+![start_ghost](/images/start_ghost.png)
+
 2. Ghost will now be live at [http://localhost:2368/](http://localhost:2368/).
 
 ![ghost](/images/ghost.png)
