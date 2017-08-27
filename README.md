@@ -68,7 +68,9 @@ knex-migrator reset && knex-migrator init
 ### 5. Configure Ghost
 
 1. Go to [http://localhost:2368/ghost](http://localhost:2368/ghost) and follow the instructions to set up your blog.
-![ghost_setup-1](/content/images/2017/08/ghost_setup-1.png)
+
+![ghost_setup](/images/ghost_setup.png)
+
 2. Create your desired content on the Ghost Admin Panel.
 
 ![ghost_admin](/images/ghost_admin.png)
