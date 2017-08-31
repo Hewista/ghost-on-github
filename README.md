@@ -1,4 +1,4 @@
-# Complete Guide to host a Ghost Blog v1.x for Free on Github Pages
+# Ghost v1.x on Github Pages
 
 ![ghost-blog](/images/ghost-blog.png)
 
